@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="output.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      font-family: inter;
+    }
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-white-bg">
+    <div class="bg-ight-Grayish-Blue p-6 rounded-b-xl md:flex md:px-28" id="header">
+      <div class="border-b-slate-300 border-b-[1px] flex flex-col gap-3 md:w-[85%] md:m-auto md:border-b-0">
+        <h1 class="text-Very-Dark-Blue text-2xl font-medium">Social Media Dashboard</h1>
+        <p class="text-Dark-Grayish-Blue text-lg mb-4">Total Followers: 23,004</p>
+      </div>
+        <div class=" w-full my-4 flex justify-between items-center md:w-[85%] md:m-auto md:my-6 md:justify-end md:gap-4">
+          <h2 class="text-Dark-Grayish-Blue text-lg font-medium">Dark Mode</h2>
+          <label for="toggle" class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="toggle" class="sr-only peer">
+            <span class="w-11 h-6  bg-toggle rounded-full peer-focus:ring-2 peer-focus:ring-blue-300 transition peer-checked:bg-gradient-to-r peer-checked:from-gradient1 peer-checked:to-gradient2"></span>
+            <span class="absolute left-1 top-1 bg-white-bg w-4 h-4 rounded-full transition  peer-checked:translate-x-full peer-checked:bg-Very-Dark-Blue"></span>
+          </label>
+        </div>
+    </div>
+    <div class=" grid grid-cols-1 gap-4 bottom-8 px-6 md:grid-cols-4 md:w-[85%] md:m-auto md:px-2" id="card1">
+
+        <div class="bg-ight-Grayish-Blue grid gap-4 content-center text-center border-t-4 border-t-facebook rounded-md p-4 shadow-md">
+            <div class="m-auto flex gap-2">
+              <img src="../images/icon-facebook.svg" alt="">
+              <h2 class="text-Dark-Grayish-Blue font-semibold">@nathanf</h2>
+            </div>
+            <h1 class="text-Very-Dark-Blue font-bold text-6xl">1987</h1>
+            <h3 class="uppercase -tracking-[-8px] text-center text-Dark-Grayish-Blue text-sm font-medium">Followers</h3>
+            <p class="flex items-center m-auto text-lime-green gap-2 font-semibold text-lg"><span><img src="../images/icon-up.svg" alt=""></span> 12 Today</p>
+        </div>
+
+        <div class="bg-ight-Grayish-Blue grid gap-4 content-center text-center border-t-4 border-t-twitter rounded-md p-4 shadow-md">
+          <div class="m-auto flex gap-2">
+            <img src="../images/icon-twitter.svg" alt="">
+            <h2 class="text-Dark-Grayish-Blue font-semibold">@nathanf</h2>
+          </div>
+          <h1 class="text-Very-Dark-Blue font-bold text-6xl">1044</h1>
+          <h3 class="uppercase -tracking-[-8px] text-center text-Dark-Grayish-Blue text-sm font-medium">Followers</h3>
+          <p class="flex items-center m-auto text-lime-green gap-2 font-semibold text-lg"><span><img src="../images/icon-up.svg" alt=""></span>  99 Today</p>
+        </div>
+
+        <div class="bg-ight-Grayish-Blue grid gap-4 content-center text-center relative after:absolute after:bg-gradient-to-l after:from-insta2 after:to-insta1 after:top-0 after:w-full after:h-1 after:overflow-hidden after:rounded-xl rounded-xl p-4 shadow-md">
+          <div class="m-auto flex gap-2">
+            <img src="../images/icon-instagram.svg" alt="">
+            <h2 class="text-Dark-Grayish-Blue font-semibold">
+              @realnathanf</h2>
+          </div>
+          <h1 class="text-Very-Dark-Blue font-bold text-6xl">11K</h1>
+          <h3 class="uppercase -tracking-[-8px] text-center text-Dark-Grayish-Blue text-sm font-medium">Followers</h3>
+          <p class="flex items-center m-auto text-lime-green gap-2 font-semibold text-lg"><span><img src="../images/icon-up.svg" alt=""></span>  1099 Today</p>
+        </div>
+
+        <div class="bg-ight-Grayish-Blue grid gap-4 content-center text-center border-t-4 border-t-youtube rounded-md p-4 shadow-md">
+          <div class="m-auto flex gap-2">
+            <img src="../images/icon-youtube.svg" alt="">
+            <h2 class="text-Dark-Grayish-Blue font-semibold">Nathan F.</h2>
+          </div>
+          <h1 class="text-Very-Dark-Blue font-bold text-6xl"> 8239</h1>
+          <h3 class="uppercase -tracking-[-8px] text-center text-Dark-Grayish-Blue text-sm font-medium">Subscribers</h3>
+          <p class="flex items-center m-auto text-bright-red gap-2 font-semibold text-lg"><span><img src="../images/icon-down.svg" alt=""></span> 144 Today</p>
+        </div>
+    </div>
+    <div class="my-6  p-6 md:w-[85%] md: m-auto md:p-1">
+        
+      <h1 class="text-Dark-Grayish-Blue font-semibold text-2xl my-4" id="over">Overview - Today</h1>
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-4" id="card2">
+        <div class="bg-ight-Grayish-Blue rounded-sm shadow-md p-4 grid gap-4">
+          <div class="flex justify-between py-2">
+            <h2 class="text-Dark-Grayish-Blue font-semibold">Page Views</h2>
+            <img src="../images/icon-facebook.svg" alt="">
+          </div>
+          <div class="flex justify-between py-2 items-center">
+            <h1 class="text-Very-Dark-Blue font-bold text-4xl">87</h1>
+            <p class="text-lime-green flex items-center gap-2 font-semibold text-lg"><span><img src="../images/icon-up.svg" alt="" class="w-3"></span>3%</p>
+          </div>
+        </div>
+
+        <div class="bg-ight-Grayish-Blue rounded-sm shadow-md p-4 grid gap-4">
+          <div class="flex justify-between py-2">
+            <h2 class="text-Dark-Grayish-Blue font-semibold">Likes</h2>
+            <img src="../images/icon-facebook.svg" alt="">
+          </div>
+          <div class="flex justify-between py-2 items-center">
+            <h1 class="text-Very-Dark-Blue font-bold text-4xl"> 52</h1>
+            <p class="text-youtube flex items-center gap-2 font-semibold text-lg"><span><img src="../images/icon-down.svg" alt="" class="w-3"></span>2%</p>
+          </div>
+        </div>
+
+        <div class="bg-ight-Grayish-Blue rounded-sm shadow-md p-4 grid gap-4">
+          <div class="flex justify-between py-2">
+            <h2 class="text-Dark-Grayish-Blue font-semibold">Likes</h2>
+            <img src="../images/icon-instagram.svg" alt="">
+          </div>
+          <div class="flex justify-between py-2 items-center">
+            <h1 class="text-Very-Dark-Blue font-bold text-4xl"> 5462</h1>
+            <p class="text-lime-green flex items-center gap-2 font-semibold text-lg"><span><img src="../images/icon-up.svg" alt="" class="w-3"></span>2275%</p>
+          </div>
+        </div>
+ 
+
+ 
+        <div class="bg-ight-Grayish-Blue rounded-sm shadow-md p-4 grid gap-4">
+          <div class="flex justify-between py-2">
+            <h2 class="text-Dark-Grayish-Blue font-semibold">Profile Views</h2>
+            <img src="../images/icon-instagram.svg" alt="">
+          </div>
+          <div class="flex justify-between py-2 items-center">
+            <h1 class="text-Very-Dark-Blue font-bold text-4xl">52k</h1>
+            <p class="text-lime-green flex items-center gap-2 font-semibold text-lg"><span><img src="../images/icon-up.svg" alt="" class="w-3"></span> 1375%</p>
+          </div>
+        </div>
+  
+        <div class="bg-ight-Grayish-Blue rounded-sm shadow-md p-4 grid gap-4">
+          <div class="flex justify-between py-2">
+            <h2 class="text-Dark-Grayish-Blue font-semibold"> Retweets</h2>
+            <img src="../images/icon-twitter.svg" alt="">
+          </div>
+          <div class="flex justify-between py-2 items-center">
+            <h1 class="text-Very-Dark-Blue font-bold text-4xl">117</h1>
+            <p class="text-lime-green flex items-center gap-2 font-semibold text-lg"><span><img src="../images/icon-up.svg" alt="" class="w-3"></span>  303%</p>
+          </div>
+        </div>
+
+        <div class="bg-ight-Grayish-Blue rounded-sm shadow-md p-4 grid gap-4">
+          <div class="flex justify-between py-2">
+            <h2 class="text-Dark-Grayish-Blue font-semibold">   Likes</h2>
+            <img src="../images/icon-twitter.svg" alt="">
+          </div>
+          <div class="flex justify-between py-2 items-center">
+            <h1 class="text-Very-Dark-Blue font-bold text-4xl">507</h1>
+            <p class="text-lime-green flex items-center gap-2 font-semibold text-lg"><span><img src="../images/icon-up.svg" alt="" class="w-3"></span>  553%</p>
+          </div>
+        </div>
+
+        <div class="bg-ight-Grayish-Blue rounded-sm shadow-md p-4 grid gap-4">
+          <div class="flex justify-between py-2">
+            <h2 class="text-Dark-Grayish-Blue font-semibold">   Likes</h2>
+            <img src="../images/icon-youtube.svg" alt="">
+          </div>
+          <div class="flex justify-between py-2 items-center">
+            <h1 class="text-Very-Dark-Blue font-bold text-4xl">107</h1>
+            <p class="text-youtube flex items-center gap-2 font-semibold text-lg"><span><img src="../images/icon-down.svg" alt="" class="w-3"></span> 19%</p>
+          </div>
+        </div>
+        <div class="bg-ight-Grayish-Blue rounded-sm shadow-md p-4 grid gap-4">
+          <div class="flex justify-between py-2">
+            <h2 class="text-Dark-Grayish-Blue font-semibold">   Total Views</h2>
+            <img src="../images/icon-youtube.svg" alt="">
+          </div>
+          <div class="flex justify-between py-2 items-center">
+            <h1 class="text-Very-Dark-Blue font-bold text-4xl">1407</h1>
+            <p class="text-youtube flex items-center gap-2 font-semibold text-lg"><span><img src="../images/icon-down.svg" alt="" class="w-3"></span> 12%</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rashid ALi</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
